@@ -1,0 +1,37 @@
+# ===== Westwell Core =====
+
+DOMAIN-SUFFIX,westwell-lab.com
+
+# 精准指定（防止某些规则优先级问题）
+DOMAIN,publish.westwell-lab.com
+DOMAIN,confluence.westwell-lab.com
+DOMAIN,jira.westwell-lab.com
+
+
+# ===== AWS S3 Upload =====
+# 仅新加坡 S3
+# 避免影响全球 AWS 服务
+
+DOMAIN,s3.ap-southeast-1.amazonaws.com
+DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
+
+
+# ===== Atlassian Related =====
+# Jira/Confluence 常用依赖
+
+DOMAIN-SUFFIX,atlassian.com
+DOMAIN-SUFFIX,atlassian.net
+DOMAIN-SUFFIX,atl-paas.net
+
+
+# ===== AWS Login / CDN =====
+# 某些上传和鉴权会跳 CloudFront
+
+DOMAIN-SUFFIX,cloudfront.net
+
+
+# ===== Optional WebSocket / API =====
+# 如果后面发现 websocket 问题再打开
+
+# DOMAIN-SUFFIX,amazonaws.com
+# DOMAIN-SUFFIX,amazonaws.com.cn
