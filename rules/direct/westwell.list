@@ -1,11 +1,11 @@
 # ===== Westwell Core =====
 
-DOMAIN-SUFFIX,westwell-lab.com
+# DOMAIN-SUFFIX,westwell-lab.com
 
 # 精准指定（防止某些规则优先级问题）
-DOMAIN,publish.westwell-lab.com
-DOMAIN,confluence.westwell-lab.com
-DOMAIN,jira.westwell-lab.com
+# DOMAIN,publish.westwell-lab.com
+# DOMAIN,confluence.westwell-lab.com
+# DOMAIN,jira.westwell-lab.com
 
 
 # ===== AWS S3 Upload =====
@@ -19,15 +19,15 @@ DOMAIN-SUFFIX,s3.ap-southeast-1.amazonaws.com
 # ===== Atlassian Related =====
 # Jira/Confluence 常用依赖
 
-DOMAIN-SUFFIX,atlassian.com
-DOMAIN-SUFFIX,atlassian.net
-DOMAIN-SUFFIX,atl-paas.net
+# DOMAIN-SUFFIX,atlassian.com
+# DOMAIN-SUFFIX,atlassian.net
+# DOMAIN-SUFFIX,atl-paas.net
 
 
 # ===== AWS Login / CDN =====
 # 某些上传和鉴权会跳 CloudFront
 
-DOMAIN-SUFFIX,cloudfront.net
+# DOMAIN-SUFFIX,cloudfront.net
 
 
 # ===== Optional WebSocket / API =====
